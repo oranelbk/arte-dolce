@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Arte Dolce</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+ 
+
+   
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+  <!--<div class="preloader-wrapper">
+    <div class="preloader">
+    </div>
+  </div>-->
+
+  <!-- Search -->
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasSearch"
+    aria-labelledby="Search">
+    <div class="offcanvas-header justify-content-center">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+
+      <div class="order-md-last">
+        <h4 class="text-primary text-uppercase mb-3">
+          Recherche
+        </h4>
+        <div class="search-bar border rounded-2 border-dark-subtle">
+          <form id="search-form" class="text-center d-flex align-items-center" action="" method="">
+            <input type="text" class="form-control border-0 bg-transparent" placeholder="Search Here" />
+            <iconify-icon icon="tabler:search" class="fs-4 me-3"></iconify-icon>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="main-menu d-flex navbar fixed-top navbar-expand-lg py-4 ">
+    <div class="container">
+      <div class="main-logo">
+        <a href="./index.html">
+          <img src="/assets/img/logo_ad.png" alt="logo" class="img-fluid">
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+        <div class="offcanvas-header justify-content-center">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body justify-content-between">
+
+          <ul class="navbar-nav menu-list list-unstyled d-flex gap-md-3 ps-lg-5 mb-0">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link mx-2 active">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="./nous.html" class="nav-link mx-2">Qui sommes-nous ?</a>
+            </li>
+            <li class="nav-item">
+              <a href="/produits/index.html" class="nav-link mx-2">Chaussures</a>
+            </li>
+          </ul>
+
+          <div class="d-none d-lg-flex align-items-end">
+            <ul class="d-flex justify-content-end list-unstyled m-0">
+              <li>
+                <a href="./account.html" class="mx-3">
+                  <iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon>
+                </a>
+              </li>
+
+              <li class="">
+                <a href="./panier.html" class="mx-3">
+                  <iconify-icon icon="mdi:cart" class="fs-4 position-relative"></iconify-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch"
+                  aria-controls="offcanvasSearch">
+                  <iconify-icon icon="tabler:search" class="fs-4"></iconify-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="container d-lg-none">
+      <div class="d-flex  align-items-end mt-3">
+        <ul class="d-flex justify-content-end list-unstyled m-0">
+          <li>
+            <a href="./account.html" class="me-4">
+              <iconify-icon icon="healthicons:person" class="fs-4 me-2"></iconify-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="me-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch"
+              aria-controls="offcanvasSearch">
+              <iconify-icon icon="tabler:search" class="fs-4 me-2"></iconify-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  
+  
+  
+
+  
+  </header>
+  
+  <!--// 1 card for each products (picasso 1 and picasso 2)-->
+  <section id="products" class="padding-medium">
+    <div class="container">
+      <div class="row g-md-5" style="justify-content: space-around;">
+        <div class="col-md-4" style="width: 35%;">
+          <div class="card">
+            <img src="/assets/img/picasso1.png" class="card-img-top" alt="picasso1">
+            <div class="card-body" style="padding: 2vw 0 0 0;">
+              <div style="display: flex; justify-content: space-between;">
+                <h1>Picasso 1</h1>
+                <h1>350€</h1>
+              </div>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+              <a href="picasso-1.html" class="btn btn-primary text-uppercase fw-bold" style="width: 100%;">Accéder au produit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" style="width: 35%;">
+          <div class="card">
+            <img src="/assets/img/picasso2.png" class="card-img-top" alt="picasso2">
+            <div class="card-body" style="padding: 2vw 0 0 0;">
+              <div style="display: flex; justify-content: space-between;">
+                <h1>Picasso 2</h1>
+                <h1>350€</h1>
+              </div>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+              <a href="picasso-2.html" class="btn btn-primary text-uppercase fw-bold" style="width: 100%;">Accéder au produit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="service" class="padding-medium">
+    <div class="container">
+      <div class="row g-md-5 pt-4">
+        <div class="col-md-3 my-3">
+          <div class="card">
+            <div>
+              <iconify-icon class="service-icon text-primary fs-2" icon="ci:shopping-cart-02"></iconify-icon>
+            </div>
+            <h4 class="py-2 m-0">Livraison Gratuite</h3>
+              <div class="card-text">
+                <p class="blog-paragraph fs-6">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-3">
+          <div class="card">
+            <div>
+              <iconify-icon class="service-icon text-primary fs-2" icon="tdesign:secured"></iconify-icon>
+            </div>
+            <h4 class="py-2 m-0">Paiement 100% Sécurisé</h3>
+              <div class="card-text">
+                <p class="blog-paragraph fs-6">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-3">
+          <div class="card">
+            <div>
+              <iconify-icon class="service-icon text-primary fs-2" icon="la:award"></iconify-icon>
+            </div>
+            <h4 class="py-2 m-0">Qualité Garantis</h3>
+              <div class="card-text">
+                <p class="blog-paragraph fs-6">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-3">
+          <div class="card">
+            <div>
+              <iconify-icon class="service-icon text-primary fs-2" icon="solar:dollar-outline"></iconify-icon>
+            </div>
+            <h4 class="py-2 m-0">Icone de l'Art</h3>
+              <div class="card-text">
+                <p class="blog-paragraph fs-6">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+              </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="register" style="background-image:url(/assets/img/background-img.jpg);">
+    <div class="container padding-medium">
+      <div class="row banner-content align-items-center">
+        <div class="col-md-4 offset-md-1">
+          <h2 class="register-text text-white mt-3"> Une collection <span> <em>Picasso</em> </span></h2>
+          <p class="mb-4">Inscrivez-vous sur la newletters</p>
+        </div>
+        <div class="col-md-4 offset-md-1">
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control form-control-lg rounded-3" name="email" id="email"
+                placeholder="Entrer votre email ">
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-dark btn-lg rounded-3">S'incrire</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="bg-black">
+    <div class="container padding-medium pt-5">
+      <div class="row mt-5">
+        <div class="col-md-4 offset-md-1">
+          <div class="element style1">
+            <img src="/assets/img/logo_add.png" alt="logo">
+            <div class="social-links mt-4">
+              <ul class="d-flex list-unstyled gap-3">
+                <li class="social">
+                  <a href="#">
+                    <iconify-icon class="social-icon fs-5 text-white me-4" icon="ri:facebook-fill"></iconify-icon>
+                  </a>
+                </li>
+                <li class="social">
+                  <a href="#">
+                    <iconify-icon class="social-icon fs-5 text-white me-4" icon="ri:twitter-fill"></iconify-icon>
+                  </a>
+                </li>
+                <li class="social">
+                  <a href="#">
+                    <iconify-icon class="social-icon fs-5 text-white me-4" icon="ri:pinterest-fill"></iconify-icon>
+                  </a>
+                </li>
+                <li class="social">
+                  <a href="#">
+                    <iconify-icon class="social-icon fs-5 text-white me-4" icon="ri:instagram-fill"></iconify-icon>
+                  </a>
+                </li>
+                <li class="social">
+                  <a href="#">
+                    <iconify-icon class="social-icon fs-5 text-white me-4" icon="ri:youtube-fill"></iconify-icon>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="footer-menu">
+            <h6 class="text-uppercase fw-bold text-white mb-4">Quelques liens</h6>
+            <ul class="menu-list list-unstyled">
+              <li class="menu-item">
+                <a href="#" class="footer-link">Home</a>
+              </li>
+              <li class="menu-item">
+                <a href="nous.html" class="footer-link">A propos</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="footer-link">Services</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="footer-link">Nous contacter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="footer-menu">
+            <h6 class="text-uppercase fw-bold text-white mb-4">Centre d'aide</h6>
+            <ul class="menu-list list-unstyled">
+              <li class="menu-item">
+                <a href="#" class="footer-link">Payement</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="footer-link">Envoie</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="footer-link">Les retours produits</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="footer-link">FAQ</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="footer-link">Autres</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="footer-bottom" class="bg-black">
+    <hr class="m-0">
+    <div class="container padding-medium pt-3">
+      <div class="row mt-3">
+        <div class="col-md-6 copyright">
+          <p class="secondary-font">© 2024 Arte Dolce. Tous droit réservé.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="/assets/js/plugins.js"></script>
+  <script src="/assets/js/script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
